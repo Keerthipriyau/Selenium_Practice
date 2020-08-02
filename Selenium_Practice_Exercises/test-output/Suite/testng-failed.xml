@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [Suite]">
+  <parameter name="browser" value="firefox"/>
+  <test parallel="methods" name="TestNG_Parameters1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Testcases.ParameterTest">
+        <methods>
+          <include name="launch_Browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Testcases.ParameterTest -->
+    </classes>
+  </test> <!-- TestNG_Parameters1(failed) -->
+  <test parallel="methods" name="TestNG_Parameters2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Testcases.ParameterTest">
+        <methods>
+          <include name="launch_Browser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Testcases.ParameterTest -->
+    </classes>
+  </test> <!-- TestNG_Parameters2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
