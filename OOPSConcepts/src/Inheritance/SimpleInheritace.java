@@ -1,0 +1,16 @@
+package Inheritance;
+
+
+	
+	class Animal1{  
+		void eat(){System.out.println("eating...");}  
+		}  
+		class Dog1 extends Animal{  
+		void bark(){System.out.println("barking...");}  
+		}  
+		class SimpleInheritace{  
+		public static void main(String args[]){  
+		Dog1 d=new Dog1();  
+		d.bark();  
+		d.eat();  
+		}} 
